@@ -160,8 +160,8 @@
 
             </div>
           </div>
-
         </div>
+      </div>
     </section><!-- End About Me Section -->
 
     <!-- ======= My Resume Section ======= -->
@@ -276,15 +276,13 @@
 
 
     <!-- ======= My Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
+    <section>
       <div class="container">
-
         <div class="section-title">
           <span>My Portfolio</span>
           <h2>My Portfolio</h2>
         </div>
-
-        <div class="row portfolio-container">
+        <div class="row">
           <div class="col-lg-6">
             <iframe class="video" width="50" height="400" src="https://www.youtube.com/embed/Q9j31TGu0O8"
               title="YouTube video player"
@@ -325,7 +323,6 @@
               Password: password
               <br>
               <br>
-
             </p>
           </div>
           <div class="col-lg-6">
@@ -379,45 +376,8 @@
           </div>
         </div>
       </div>
-    </section><!-- End My Portfolio Section -->
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    </section>
+    <!-- End My Portfolio Section -->
 
 
     <!-- ======= Contact Me Section ======= -->
@@ -471,28 +431,32 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="https://formspree.io/f/xqknwdzn" method="POST" role="form" class="php-email-form"
-              enctype="multipart/form-data" name="EmailForm">
+            <form id="fs-frm" action="https://formspree.io/f/xqknwdzn" accept-charset="utf-8" method="POST" role="form"
+              class="php-email-form" enctype="multipart/form-data" name="EmailForm">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input name="name" id="name" type="name" class="form-control" placeholder="Your Name" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input name="email" id="email" type="email" class="form-control" placeholder="Your Email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input name="subject" id="subject" type="subject" class="form-control" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                <textarea class="form-control" id="message" name="message" rows="6" placeholder="Message"
+                  required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+              <div class="text-center">
+                <button type="submit" value="Submit">Send Message</button>
+              </div>
             </form>
           </div>
 
